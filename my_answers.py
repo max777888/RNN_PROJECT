@@ -3,6 +3,7 @@ import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.layers import LSTM
+from keras.layers import Activation
 import keras
 import string
 
@@ -55,7 +56,6 @@ def window_transform_text(text, window_size, step_size):
 
     while ctr < ( len(text) - window_size ):
       inputs.append(text[ctr:ctr+window_size])
-      'print(inputs)
       outputs.append(text[ctr+window_size])
       ctr += step_size
           
