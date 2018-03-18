@@ -1,9 +1,8 @@
 import numpy as np
 
 from keras.models import Sequential
-from keras.layers import Dense
+from keras.layers import Dense,Activation
 from keras.layers import LSTM
-from keras.layers import Activation
 import keras
 import string
 
